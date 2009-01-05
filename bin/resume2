@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+# For testing only...
+begin
+  require 'resume2'
+rescue LoadError => exception
+  $:.unshift File.dirname(File.expand_path(__FILE__)) + "/../lib"
+  retry
+end
+
+resume2app = Resume2Application.new
+resume2app.run
