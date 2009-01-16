@@ -1,3 +1,4 @@
+# TODO: Use a .resume2 RC file for templates and resume file defaults.
 class Resume2Application  
   DEFAULT_SOURCE_FILENAME = "resume.yml"
   SUPPORTED_FORMATS = ['pdf', 'rtf', 'txt']
@@ -5,12 +6,15 @@ class Resume2Application
   def run
     called_as = File.basename($0)
     @formats = formats_are(called_as)
-    @templates = templates_are
-    @source = source_is
-    
-    puts @formats
-    puts @templates
-    puts @source
+    @template_file = templates_are
+    @resume_file = source_is
+
+    generator = Generator.new(@template_file, @resume_file)
+
+    # TODO: Support output direction
+    # @formats.each do |format|
+    #   generator.write format, :stdout
+    # end
   end
   
 private
@@ -19,14 +23,14 @@ private
     puts "resume2[format] [format] path-to-template [resume.yml]"
     puts "  examples:"
     puts "    resume2 txt templates/fancy.markdown resume.yml"
-    puts "    resume2pdf templates/clean.markdown"
+    puts "    resume2txt templates/clean.markdown"
     puts "  Supported formats: " + supported_formats
       
     Process.exit!
   end
     
-  def formats_are(called_as)
-    format_name = called_as.split("2", 2)[1]
+  def formats_are(filename)
+    format_name = filename.split("2", 2)[1]
     if format_name.length == 0
       ARGV.size > 1 ? format_name = ARGV[0]  : usage
     end
@@ -51,7 +55,6 @@ private
   end
   
   def source_is
-    puts @formats.include?(ARGV[0])
     source = case ARGV.size
       when 1: DEFAULT_SOURCE_FILENAME
       when 2: @formats.include?(ARGV[0]) ? DEFAULT_SOURCE_FILENAME : ARGV[-1]
