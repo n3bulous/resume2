@@ -1,20 +1,25 @@
-# Resume2
+# Resume2 ##
 
-## Description
+## Description ##
 
+Resume2 is a command line tool to manage your resume from a central data (YAML) file.
 
+Right now it will process a Markdown file and merge the data into it. From there you can create a PDF or HTML via TextMate.  Plenty of refinements before I even contemplate labeling it ready for public consumption.
 
-## Installation
+## Installation ##
+
+(once the gemspec has been written and tested...)
 
 sudo gem install n3bulous-resume2 --source=http://gems.github.com
 
 
-
-## Usage
-
+## Usage ##
 
 
-## License
+## TODO ##
+
+
+## License ##
 
 Resume2 is free software; it is released under a BSD-style license that allows you to do as you wish with it as long as you don’t attempt to claim it as your own work.  
 
