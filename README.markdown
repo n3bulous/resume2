@@ -1,38 +1,21 @@
-= Resume2
+# Resume2
 
-== Description
+## Description
 
-Describe your gem here ... 
 
-== Installation
 
-    sudo gem install resume2
+## Installation
 
-== Usage
+sudo gem install n3bulous-resume2 --source=http://gems.github.com
 
-    require 'resume2'
 
-== License
 
-Copyright (c) <year> <copyright holders>
+## Usage
 
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+## License
+
+Resume2 is free software; it is released under a BSD-style license that allows you to do as you wish with it as long as you don’t attempt to claim it as your own work.  
+
+By downloading this software, you agree to NOT blame the author if you fail to get a job, fail to apply for a job, or continue living in your mother's basement or garage.  The author is also not responsible for any typos, either mine or yours.  Use at your own risk.  Software is not approved for use in mission critical systems.
