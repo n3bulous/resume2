@@ -10,16 +10,16 @@ spec = Gem::Specification.new do |s|
   s.name             = 'resume2'
   s.version          = Resume2::Version.to_s
   s.has_rdoc         = true
-  s.extra_rdoc_files = %w(README.rdoc)
-  s.rdoc_options     = %w(--main README.rdoc)
+  s.extra_rdoc_files = %w(README.markdown)
+  s.rdoc_options     = %w(--main README.markdown)
   s.summary          = "This gem does ... "
   s.author           = 'First Last'
   s.email            = 'user@example.com'
   s.homepage         = 'http://my-site.net'
-  s.files            = %w(README.rdoc Rakefile) + Dir.glob("{lib,test}/**/*")
-  # s.executables    = ['resume2']
+  s.files            = %w(README.markdown Rakefile) + Dir.glob("{lib,test}/**/*")
+  s.executables      = ['resume2']
   
-  # s.add_dependency('gem_name', '~> 0.0.1')
+  s.add_dependency('rdiscount', '~> 1.2.0')
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|
