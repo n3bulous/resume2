@@ -17,7 +17,7 @@ spec = Gem::Specification.new do |s|
   s.email            = 'kevin+github@conceptsahead.com'
   s.homepage         = 'http://conceptsahead.com'
   s.files            = %w(README.markdown Rakefile) + Dir.glob("{lib,test}/**/*")
-  s.executables      = ['resume2']
+  s.executables      = ['resume2', 'resume2markdown', 'resume2pdf', 'resume2txt', 'resume2html', 'resume2rtf', 'resume2all']
   
   s.add_dependency('rdiscount', '~> 1.2.0')
 end
