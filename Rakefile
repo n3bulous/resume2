@@ -12,10 +12,10 @@ spec = Gem::Specification.new do |s|
   s.has_rdoc         = true
   s.extra_rdoc_files = %w(README.markdown)
   s.rdoc_options     = %w(--main README.markdown)
-  s.summary          = "This gem does ... "
-  s.author           = 'First Last'
-  s.email            = 'user@example.com'
-  s.homepage         = 'http://my-site.net'
+  s.summary          = "Manage your resume information in a central YAML file and then export it into different formats and themes."
+  s.author           = 'Kevin McFadden'
+  s.email            = 'kevin+github@conceptsahead.com'
+  s.homepage         = 'http://conceptsahead.com'
   s.files            = %w(README.markdown Rakefile) + Dir.glob("{lib,test}/**/*")
   s.executables      = ['resume2']
   
